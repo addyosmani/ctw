@@ -6,6 +6,15 @@
 		created: function() {
 			var video = this;
 
+			// window.URL polyfill
+			if (!window.URL) {
+				window.URL = window.URL || window.webkitURL || window.msURL || window.oURL;
+			}
+			// getUserMedia polyfill
+			if (!navigator.getUserMedia) {
+				navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+			}
+
 			navigator.getUserMedia({
 				audio: this.audio !== null,
 				video: true
@@ -29,15 +38,6 @@
 			this.classList.add(filter);
 		}
 	});
-
-	// window.URL polyfill
-	if (!window.URL) {
-		window.URL = window.URL || window.webkitURL || window.msURL || window.oURL;
-	}
-	// getUserMedia polyfill
-	if (!navigator.getUserMedia) {
-		navigator.getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
-	}
 </script>
 <style>
 	.blur {
