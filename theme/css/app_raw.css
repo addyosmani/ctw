@@ -1099,6 +1099,7 @@ slide.thank-you-slide a {
     background-position: 50% 32%
 }
 
+
 .paper-button {
     display: inline-block;
     -webkit-transition: box-shadow 0.2s, background 0.2s;
@@ -1156,5 +1157,4 @@ slide.thank-you-slide a {
     background: linear-gradient(top, rgba(0,0,0,0) 5%,rgba(0,0,0,0.08) 40%);
     box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset,0 -1px 1px rgba(0,0,0,0.1) inset,0 1px 0px rgba(0,0,0,0.2) inset
 }
-
 
