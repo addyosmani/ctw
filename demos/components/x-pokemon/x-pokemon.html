@@ -14,7 +14,11 @@
 -->
 <polymer-element name="x-pokemon" attributes="name">
     <template>
-        <img class="pokemon" alt="{{name}}" src="http://img.pokemondb.net/artwork/{{name}}.jpg">
+    <!-- online
+            <img class="pokemon" alt="{{name}}" src="http://img.pokemondb.net/artwork/{{name}}.jpg">
+
+-->
+        <img class="pokemon" alt="{{name}}" src="{{name}}.jpg">
     </template>
     <script>
         Polymer('x-pokemon', {
