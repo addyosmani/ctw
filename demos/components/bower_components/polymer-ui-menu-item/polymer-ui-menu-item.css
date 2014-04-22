@@ -20,34 +20,34 @@ license that can be found in the LICENSE file.
   opacity: 0.5;
 }
 
-:host(:hover:host) {
+:host(:hover) {
   opacity: 0.9;
 }
 
-:host(.polymer-selected:host, [active]:host) {
+:host(.polymer-selected, [active]) {
   opacity: 1;
 }
 
-:host(.polymer-ui-light-theme.polymer-selected:host, .polymer-ui-light-theme[active]:host) {
+:host(.polymer-ui-light-theme.polymer-selected, .polymer-ui-light-theme[active]) {
   background: #f2f2f2;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-:host(.polymer-ui-dark-theme:host) {
+:host(.polymer-ui-dark-theme) {
   color: #b3b3b3;
 }
 	
-:host(.polymer-ui-dark-theme:hover:host) {
+:host(.polymer-ui-dark-theme:hover) {
   color: rgba(255, 255, 255, 0.9);
 }
 
-:host(.polymer-ui-dark-theme.polymer-selected:host, .polymer-ui-dark-theme[active]:host) {
+:host(.polymer-ui-dark-theme.polymer-selected, .polymer-ui-dark-theme[active]) {
   background-color: #000;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.9);
 }
 
-:host([active].no-active-bg:host) {
+:host([active].no-active-bg) {
   background-color: transparent;
   border: 1px solid transparent;
 }

@@ -2,17 +2,17 @@
   "name": "polymer-ui-arrow",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#0.1.4"
+    "polymer": "Polymer/polymer#0.2.3"
   },
-  "version": "0.1.4",
+  "version": "0.2.3",
   "homepage": "https://github.com/Polymer/polymer-ui-arrow",
-  "_release": "0.1.4",
+  "_release": "0.2.3",
   "_resolution": {
     "type": "version",
-    "tag": "0.1.4",
-    "commit": "59476fcd034e6af87c02f8564e6a1f184aaa257c"
+    "tag": "0.2.3",
+    "commit": "881bdcf961e4449f3ce81c72f2a5e2cb0d205c27"
   },
   "_source": "git://github.com/Polymer/polymer-ui-arrow.git",
-  "_target": "0.1.4",
+  "_target": "0.2.3",
   "_originalSource": "Polymer/polymer-ui-arrow"
 }

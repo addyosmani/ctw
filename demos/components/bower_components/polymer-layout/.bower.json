@@ -2,17 +2,17 @@
   "name": "polymer-layout",
   "private": true,
   "dependencies": {
-    "polymer": "Polymer/polymer#0.1.4"
+    "polymer": "Polymer/polymer#0.2.3"
   },
-  "version": "0.1.4",
+  "version": "0.2.3",
   "homepage": "https://github.com/Polymer/polymer-layout",
-  "_release": "0.1.4",
+  "_release": "0.2.3",
   "_resolution": {
     "type": "version",
-    "tag": "0.1.4",
-    "commit": "c9bebd39584d02ca612cbc2174941084ebf0c809"
+    "tag": "0.2.3",
+    "commit": "c84596f609426190edfd7e17dcf9c03e429565c5"
   },
   "_source": "git://github.com/Polymer/polymer-layout.git",
-  "_target": "0.1.4",
+  "_target": "0.2.3",
   "_originalSource": "Polymer/polymer-layout"
 }

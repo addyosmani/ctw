@@ -120,6 +120,7 @@
  
 </slide>
 
+<!--
 <slide    data-body-class="core-fill" >
   
     <hgroup>
@@ -135,7 +136,7 @@
     <article class="flexbox vleft"><h2 style="margin-top: 33%">What if HTML was expressive enough to</br> support filling in the gaps in the web platform with our <strong>own</strong> elements?</h2></article>
  
 </slide>
-
+-->
 <slide id="philosophy" class="large light">
   
     <hgroup>
@@ -156,7 +157,7 @@
 <li><a href="yt-jukebox/demos/chart-js-polymer/index.html">&lt;x-chart&gt;</a></li>
 <li><a href="demos/components/bower_components/polymer-ui-tabs/smoke.html">&lt;x-tabs&gt;</a> (<a href="demos/components/tabbed-content/index.html">&lt;tabbed-content&gt;</a>, <a href="demos/components/polymer-ui-carousel/smoke-labels.html">&lt;x-carousel&gt;</a>)</li>
 <li><a href="demos/components/x-miley/demo.html">&lt;x-miley&gt;</a></li>
-<li><a href="demos/components/smashing-video/index.html">&lt;smashing-video&gt;</a> <!--(<a href="demos/components/faster-video/index.html">&lt;faster-video&gt;</a>)--> </li>
+<li><a href="demos/components/video-player/index.html">&lt;video-player&gt;</a> <!--(<a href="demos/components/faster-video/index.html">&lt;faster-video&gt;</a>)--> </li>
 <li><a href="demos/components/video-camera-element/index.html">&lt;video-camera&gt;</a></li><!--
 <li><a href="demos/components/visualizer/examples/simple-drum-sampler.html">&lt;drum-sampler&gt;</a></li>-->
 <li><a href="demos/components/x-slideshow/index.html">&lt;x-slideshow&gt;</a></li>
@@ -205,6 +206,7 @@
  
 </slide>
 
+<!--
 <slide    data-body-class="platform-fill" >
   
     <hgroup>
@@ -220,7 +222,7 @@
     <article class="flexbox vleft"><h2 style="margin-top: 33%">In order to understand where we're going,</br> we need to understand where we've been.</h2></article>
  
 </slide>
-
+-->
 <slide    data-body-class="core-fill" >
   
     <hgroup>
@@ -876,7 +878,7 @@ var foo = mySelect.selectedIndex;
   &lt;/x-tabs>
 </pre></article>
  <div class="build">
- <pre class="prettyprint" data-lang="JavaScript" data-run-demo="demos/components/bower_components/polymer-ui-tabs/smoke.html">
+ <pre class="prettyprint" data-lang="JavaScript" data-run-demo="demos/components/bower_components/polymer-ui-tabs/demo.html">
   var tabs = document.createElement('x-tabs');
   var tab1 = document.createElement('x-tab');
   var tab2 = document.createElement('x-tab');
@@ -1403,19 +1405,19 @@ root.textContent = 'How you doing?';
  <div class="build">
 
 <p>
-Piece one level of the Shadow DOM (/shadow/) ~ upper shadow boundary
-
+::shadow - selects shadow trees one level deep
  <pre class="prettyprint" data-lang="CSS">
-my-element /shadow/ h2{
-  color: green;
+x-foo::shadow h1 {
+  color: red;
 }
 </pre>
 </p>
+
 <p>
-Pierce every layer of the Shadow DOM (/shadow-deep/) ~ all shadow boundaries
+/deep/ - selects shadow trees that are N levels deep
  <pre class="prettyprint" data-lang="CSS">
-my-element /shadow-deep/ h2{
-  color: purple;
+x-foo /deep/ h1 {
+  color: red;
 }
 </pre>
 </p>
@@ -1732,12 +1734,12 @@ my-element /shadow-deep/ h2{
   <img src="images/polymer/uielements/toolbar.png" style="width:100%">
 </div>
 
-<p><code>&lt;polymer-ui-accordion&gt;</code> <a href="demos/components/bower_components/polymer-ui-accordion/smoke.html">demo</a></p>
+<p><code>&lt;polymer-ui-accordion&gt;</code> <a href="demos/components/bower_components/polymer-ui-accordion/demo.html">demo</a></p>
 <p><code>&lt;polymer-ui-animated-pages&gt;</code></p>
-<p><code>&lt;polymer-ui-card&gt;</code> <a href="demos/components/bower_components/polymer-ui-card/smoke.html">demo</a></p>
-<p><code>&lt;polymer-ui-sidebar-menu&gt;</code> <a href="demos/components/bower_components/polymer-ui-sidebar-menu/smoke.html">demo</a></p>
-<p><code>&lt;polymer-ui-tabs&gt;</code> <a href="demos/components/bower_components/polymer-ui-tabs/smoke.html">demo</a></p>
-<p><code>&lt;polymer-ui-toggle-button&gt;</code> <a href="demos/components/bower_components/polymer-ui-toggle-button/smoke.html">demo</a></p>
+<p><code>&lt;polymer-ui-card&gt;</code> <a href="demos/components/bower_components/polymer-ui-card/demo.html">demo</a></p>
+<p><code>&lt;polymer-ui-sidebar-menu&gt;</code> <a href="demos/components/bower_components/polymer-ui-sidebar-menu/demo.html">demo</a></p>
+<p><code>&lt;polymer-ui-tabs&gt;</code> <a href="demos/components/bower_components/polymer-ui-tabs/demo.html">demo</a></p>
+<p><code>&lt;polymer-ui-toggle-button&gt;</code> <a href="demos/components/bower_components/polymer-ui-toggle-button/demo.html">demo</a></p>
 <p><code>&lt;polymer-ui-theme-aware&gt;</code></p>
 <p><a href="http://sg-sbx.herokuapp.com/index.html">Salesforce elements</a>
 <p>...</p>
@@ -1942,7 +1944,7 @@ my-element /shadow-deep/ h2{
 <p><code>&lt;polymer-shared-lib&gt;</code></p>
 <p><code>&lt;polymer-google-jsapi&gt;</code></p>
 <p><span class="bold blue">Data</span></p>
-<p><code><a href="demos/components/bower_components/polymer-localstorage/smoke.html">&lt;polymer-localstorage&gt;</code></a></p>
+<p><code><a href="demos/components/bower_components/polymer-localstorage/demo.html">&lt;polymer-localstorage&gt;</code></a></p>
 <p><code>&lt;polymer-xhr&gt;</code></p>
 <p><code>&lt;polymer-jsonp&gt;</code></p>
 <p><code>&lt;polymer-file&gt;</code></p>
@@ -2053,7 +2055,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
         
       </span>
       <h2>Everything is an element</h2>
-      <h3><a href="demos/components/bower_components/polymer-file/smoke.html">read files...using DOM</a></h3>
+      <h3><a href="demos/components/bower_components/polymer-file/demo.html">read files...using DOM</a></h3>
     </hgroup>
     <article ><pre class="corner prettyprint">
 &lt;script src="<span alt="bower install polymer" data-tooltip="bower install Polymer/platform">platform.js</span>">&lt;/script>
@@ -2063,7 +2065,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
 <pre class="prettyprint" style="font-size:25px;">&lt;polymer-file <b data-tooltip="'dataurl', 'arraybuffer', 'binarystring', 'text'">readas</b><b>="dataurl"</b>>&lt;/polymer-file>
 </pre>
 
-<pre class="prettyprint" data-lang="JS" data-run-demo="demos/components/bower_components/polymer-file/smoke.html">
+<pre class="prettyprint" data-lang="JS" data-run-demo="demos/components/bower_components/polymer-file/demo.html">
 var pFile = document.querySelector('polymer-file');
 
 pFile.addEventListener(<b>'polymer-result'</b>, function(e) {
@@ -2097,7 +2099,7 @@ pFile.addEventListener(<b>'polymer-result'</b>, function(e) {
         
       </span>
       <h2>Everything is an element</h2>
-      <h3><a href="demos/components/bower_components/polymer-media-query/smoke.html">responsive design...using DOM</a> (<a href="demos/components/x-picture/index.html">Bonus</a>)</h3>
+      <h3><a href="demos/components/bower_components/polymer-media-query/demo.html">responsive design...using DOM</a> (<a href="demos/components/x-picture/index.html">Bonus</a>)</h3>
     </hgroup>
     <article ><pre class="corner prettyprint">
 &lt;script src="<span alt="bower install polymer" data-tooltip="bower install polymer">platform.js</span>">&lt;/script>
@@ -2509,7 +2511,11 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
 
 <aside class="note">
   <section>
+    <p>You can press h to focus the slide</p>
+    <p>To add a bit of interactivity we can use a declarative event handler. Here we're using on-click (note, not onclick) to fire an action called setMessage any time our button is clicked.</p>
+    <p>setMessage will change a property on our prototype called message, which will then update inside the binding in our template</p>
     <p>Explain why onclick is bad but on-click is awesome</p>
+    <p>onclick is bad because it works in the global scope and uses eval. on-click is awesome because it only has access to your element, it automatically removes the event listener when your element leaves the DOM, and it uses polymer-gestures, a library which unifies mouse, touch and pointer events.</p>
   </section>
 </aside></article>
  
@@ -3167,7 +3173,7 @@ X-Tag can be used as normal in an import
   <aside class="gdbar right"><img src="images/logos/chrome_logo.png"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>&lt;thank-you&gt;</h2>
-    <div style="margin-bottom:5em;"><a href="http://addyosmani.com/polymer-building-blocks">addyosmani.com/polymer-building-blocks</a></div>
+    <div style="margin-bottom:5em;"><a href="http://addyosmani.github.io/ctw">addyosmani.github.io/ctws</a></div>
   </article>
   <p class="auto-fadein" data-config-contact></p>
 </slide>

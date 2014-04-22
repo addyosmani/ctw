@@ -1,17 +1,19 @@
-<element name="x-slideshow" attributes="width height auto timer">
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="x-slideshow" attributes="width height auto timer">
   <template>
     <div class="container" style="width:{{width}}px; height:{{height}}px;">
-      <div on-click="onPreviousClicked" class="controls previous" style="line-height:{{height}}px;"><</div>
+      <div on-click="{{onPreviousClicked}}" class="controls previous" style="line-height:{{height}}px;"><</div>
       <content select="img"></content>
-      <div on-click="onNextClicked" class="controls next" style="line-height:{{height}}px;">></div>
+      <div on-click="{{onNextClicked}}" class="controls next" style="line-height:{{height}}px;">></div>
     </div>
 
     <style>
-      .container {
+      :host .container {
         border:1px solid black;
         position:relative;
       }
-      .controls{
+      :host .controls{
         width:40px;
         height:100%;
         color:white;
@@ -24,18 +26,18 @@
         cursor:pointer;
         z-index:100;
       }
-      .controls:hover{
+      :host .controls:hover{
         opacity:1;
       }
-      .previous{
+      :host .previous{
         left:0;
         top:0;
       }
-      .next{
+      :host .next{
         right:0;
         top:0;
       }
-      content::-webkit-distributed(img) {
+      ::content img {
         position:absolute;
         top:0;
         opacity:0;
@@ -50,7 +52,7 @@
     </style>
   </template>
   <script>
-    Polymer.register(this, {
+    Polymer('x-slideshow', {
       currentImage: 0, //image to start with initially
       width:700,
       height:700,
@@ -96,4 +98,4 @@
       },
     });
 </script>
-</element>
+</polymer-element>

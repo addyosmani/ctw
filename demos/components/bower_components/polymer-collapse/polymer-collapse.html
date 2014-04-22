@@ -97,7 +97,6 @@ license that can be found in the LICENSE file.
       size: null,
       attached: function() {
         this.installControllerStyles();
-        this.inDocument = true;
         this.async(function() {
           this.afterInitialUpdate = true;
         });
@@ -188,7 +187,7 @@ license that can be found in the LICENSE file.
         }
       },
       update: function() {
-        if (!this.target || !this.inDocument) {
+        if (!this.target) {
           return;
         }
         if (!this.isTargetReady) {

@@ -10,31 +10,6 @@ polymer-ui-carousel {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-polymer-ui-animated-pages > div {
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 100px;
-  color: black;
-}
-
-/* Style the different slides */
-
-polymer-ui-animated-pages > div:nth-child(2) {
-  background: #5bc0de; 
-}
-
-polymer-ui-animated-pages > div:nth-child(3) {
-  background: #fbb450;
-}
-
-polymer-ui-animated-pages > div:nth-child(4) {
-  background: #bd362f;
-}
-
-polymer-ui-animated-pages > div:nth-child(5) {
-  background: #2f96b4;
-}
 
 /* Disable focus */
 
@@ -80,7 +55,7 @@ p {
       width: 300px;
     }   
 
-    polymer-ui-carousel ^^ #controls {
+    polymer-ui-carousel /shadow-root/ #controls {
       display: none;
     }         
 }

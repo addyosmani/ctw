@@ -14,10 +14,37 @@
     <!-- load demo styles -->
     <link rel="stylesheet" href="bower_components/polymer-ui-base-css/base.css">
     <link rel="stylesheet" href="smoke.css">
-    <style>
+    <style shim-shadowdom>
     polymer-ui-carousel #controls button {
       font-size: 15px;
     }
+
+    polymer-ui-animated-pages /deep/ div {
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+      color: black;
+    }
+
+    /* Style the different slides */
+
+    polymer-ui-animated-pages /deep/ div:nth-child(2) {
+      background: #5bc0de; 
+    }
+
+    polymer-ui-animated-pages /deep/ div:nth-child(3) {
+      background: #fbb450;
+    }
+
+    polymer-ui-animated-pages /deep/ div:nth-child(4) {
+      background: #bd362f;
+    }
+
+    polymer-ui-animated-pages /deep/ div:nth-child(5) {
+      background: #2f96b4;
+    }
+
     </style>
   </head>
 

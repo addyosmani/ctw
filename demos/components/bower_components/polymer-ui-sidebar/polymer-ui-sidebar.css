@@ -21,7 +21,7 @@ license that can be found in the LICENSE file.
 }
 
 /*@polyfill :host :not(polymer-ui-submenu-item) > polymer-ui-menu */
-::content polymer-ui-menu {
+::content > polymer-ui-menu {
   background: none !important;
   padding: 0 10px;
   margin: 10px 0;
