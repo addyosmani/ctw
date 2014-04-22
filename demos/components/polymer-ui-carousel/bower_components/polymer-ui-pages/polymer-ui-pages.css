@@ -19,8 +19,8 @@ license that can be found in the LICENSE file.
   z-index: -1000;
 }
 
-/*@polyfill :host > *.polymer-selected */
-::content > *.polymer-selected {
+/*@polyfill :host > .polymer-selected */
+::content > .polymer-selected {
   visibility: visible;
   z-index: auto;
 }

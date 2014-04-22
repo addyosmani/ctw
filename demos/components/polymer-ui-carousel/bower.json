@@ -33,6 +33,8 @@
   "resolutions": {
     "polymer": "master",
     "platform": "master",
-    "polymer-flex-layout": "master"
+    "polymer-flex-layout": "master",
+    "core-component-page": "0.2.3",
+    "core-action-icons": "0.2.3"
   }
 }

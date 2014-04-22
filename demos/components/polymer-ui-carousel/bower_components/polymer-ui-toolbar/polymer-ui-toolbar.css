@@ -53,12 +53,12 @@ license that can be found in the LICENSE file.
 }
 
 /*@polyfill :host > polymer-ui-toolbar */
-::content > polymer-ui-toolbar {
+::content >  polymer-ui-toolbar {
   margin: 0;
 }
 
 /*@polyfill :host > polymer-ui-toolbar:not(.narrow-layout) */
-::content > polymer-ui-toolbar:not(.narrow-layout) {
+::content >  polymer-ui-toolbar:not(.narrow-layout) {
   border: 0;
   background: transparent none;
 }
