@@ -26,6 +26,7 @@
   slides>slide hgroup {
     margin-top: 20px;
   }
+  slide.medium {font-size:2vw}
   .snippet-demo {
       color: white !important;
       background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4387fd), color-stop(50%, #376fe0), color-stop(50%, #242424), color-stop(100%, #2463de));
@@ -174,16 +175,14 @@
       <div class="topmargin">
 <div>
 <ul class="build">
-  <li><a href="yt-jukebox/demos/other/blink/blink.html">&lt;x-blink&gt;</a></li>
+  <li><a href="demos/components/blink/blink.html">&lt;x-blink&gt;</a></li>
   <li><a href="yt-jukebox/demos/chart-js-polymer/index.html">&lt;x-chart&gt;</a></li>
-  <li><a href="demos/components/bower_components/polymer-ui-tabs/demo.html">&lt;my-tabs&gt;</a> (<a href="demos/components/tabbed-content/index.html">&lt;tabbed-content&gt;</a>, <a href="demos/components/polymer-ui-carousel/smoke-labels.html">&lt;my-carousel&gt;</a>)</li>
+  <li><a href="demos/components/bower_components/polymer-ui-tabs/demo.html">&lt;my-tabs&gt;</a> (<a href="demos/components/tabbed-content/index.html">&lt;tabbed-content&gt;</a>)</li>
   <li><a href="demos/components/x-miley/demo.html">&lt;x-miley&gt;</a></li>
-  <li><a href="demos/components/yt-search/demo.html">&lt;yt-search&gt;</a></li>
   <li><a href="demos/components/google-signin/components/google-signin/demo.html">&lt;google-signin&gt;</a> (<a href="demos/components/polydrops/index.html">&lt;poly-drops&gt;</a>)</li>
   <li><a href="demos/components/x-gif/index.html#/iKXH4E2.gif">&lt;x-gif&gt;</a></li>
   <li><a href="demos/components/video-camera-element/index.html">&lt;video-camera&gt;</a></li>
   <li><a href="demos/components/x-slideshow/index.html">&lt;x-slideshow&gt;</a></li>
-  <li><a href="demos/components/designer/index.html">Designer</a></li>
   <!--
   <li><a href="demos/components/pica/index.html">Pica</a></li>
   -->
@@ -1076,6 +1075,46 @@ $(div).find('[data-my-widget]').myWidget();
 
 
 
+<slide    data-body-class="core-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded"><em>Using</em> a Custom Element</h2></article>
+ 
+</slide>
+
+
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><pre class="nohighlight" style="margin-top: -50px; font-size: 1.5em;">
+&lt;link rel=&quot;import&quot; href=&quot;my-widget.html&quot; /&gt;
+
+&lt;my-widget&gt;&lt;/my-widget&gt;
+</pre>
+
+</article>
+ 
+</slide>
+
+<!--
 <slide>
   
     <hgroup>
@@ -1107,6 +1146,7 @@ Consume:
 div.innerHTML = '&lt;my-widget /&gt;';
 </pre>
 </p>
+-->
 <!--
 <p>
 Get encapsulation for free:
@@ -1118,12 +1158,12 @@ Get encapsulation for free:
   &lt;/div&gt;
 </pre>
 </p>
--->
+
 
 </div></article>
  
 </slide>
-
+-->
 
 
 
@@ -1223,6 +1263,7 @@ dialog::backdrop {
 
 
 
+<!--
 <slide>
   
     <hgroup>
@@ -1246,7 +1287,6 @@ var MyElement = document.registerElement('my-element');
  <pre class="prettyprint" data-lang="HTML">
 &lt;my-element&gt;&lt;/my-element&gt;
 </pre>
-<!--document.body.appendChild(new MyElement());-->
 </p>
 
 <p>
@@ -1258,18 +1298,50 @@ myElement.addEventListener('click', function(e) {
 });
 </pre>
 </p>
-<!--
-<p>
-Custom elements can perform their own initialisation
- <pre class="prettyprint" data-lang="JavaScript">
-document.registerElement('my-element', {
-  prototype: Object.create(HTMLElement.prototype, {
-...
-</pre>
-</p>
--->
 
 </div></article>
+ 
+</slide>
+-->
+
+<slide    data-body-class="core-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded"><em>Creating</em> a Custom Element</h2></article>
+ 
+</slide>
+
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+    <pre class="nohighlight" style="font-size:1.5em">
+// JS
+var MyElement = document.registerElement('my-element');
+// or document.createElement(..)
+
+// HTML
+&lt;my-element&gt;&lt;/my-element&gt;
+  </pre>
+</article>
  
 </slide>
 
@@ -1431,7 +1503,7 @@ root.textContent = 'How you doing?';
 
 <p>
 ::shadow - selects shadow trees one level deep
- <pre class="prettyprint" data-lang="CSS">
+ <pre class="prettyprint" data-lang="CSS" data-run-demo="http://codepen.io/robdodson/pen/HeLEb">
 x-foo::shadow h1 {
   color: red;
 }
@@ -1440,7 +1512,7 @@ x-foo::shadow h1 {
 
 <p>
 /deep/ - selects shadow trees that are N levels deep
- <pre class="prettyprint" data-lang="CSS">
+ <pre class="prettyprint" data-lang="CSS" data-run-demo="http://codepen.io/robdodson/pen/wraDn/">
 x-foo /deep/ h1 {
   color: red;
 }
@@ -1771,6 +1843,7 @@ x-foo /deep/ h1 {
 <div class="build centered bold"><span><b class="green">Reusability</b>...the non-visual polymer-elements are used to implement these!</span></div></article>
  
 </slide>
+<!--
 <slide id="polymer-ui-tabs-demo"    >
   
     <hgroup>
@@ -1809,6 +1882,7 @@ x-foo /deep/ h1 {
 </div></article>
  
 </slide>
+-->
 
 <slide id="polymer-ui-collapsible-demo"    >
   
@@ -2070,6 +2144,7 @@ ajax.addEventListener(<b>'polymer-response'</b>, function(e) {
  
 </slide>
 
+<!--
 <slide id="polymer-file-demo">
   
     <hgroup>
@@ -2102,17 +2177,12 @@ pFile.addEventListener(<b>'polymer-result'</b>, function(e) {
 <b>pFile.read();</b>
 </pre>
 
-<!--
-<div class="component-demo">
 
-<output><div>Hit run...</div></output>
-</div>
--->
 </article>
  
 
 </slide>
-
+-->
 
 <slide >
   
@@ -2169,6 +2239,24 @@ pFile.addEventListener(<b>'polymer-result'</b>, function(e) {
     <article class="flexbox vcenter"><h2>They're easy to add to your project</h2></article>
  
 </slide>
+
+
+<slide    data-body-class="core-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded">Polymer <a style="color:pink" href="designer/index.html">designer</a></h2></article>
+ 
+</slide>
+
 
 <slide id="creating-elements" class="nobackdrop nobackground segue core polymer-diagram"   >
   
@@ -2653,25 +2741,25 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
         
         
       </span>
-      <h2>ARIA roles with Polymer (<a href="http://addyosmani.github.io/polymer-ui-carousel/smoke-labels.html">Demo</a>)</h2>
+      <h2>ARIA roles with Polymer (<a href="demos/components/polymer-ui-ratings-a11y/demo.html">Demo</a>)</h2>
       <h3></h3>
     </hgroup>
     <article ><pre class="prettyprint" style="font-size:27px; line-height: 1.2;">
-&lt;polymer-ui-animated-pages id=&quot;pages&quot; selected=&quot;{{page}}&quot; ...&gt;
-
-&lt;polymer-ui-toolbar aria-label=&quot;carousel buttons&quot; 
-on-keypress=&quot;{{keypressHandler}}&quot; tabIndex=&quot;1&quot;&gt;
-
-  &lt;div id=&quot;controls&quot; aria-controls=&quot;pages&quot;&gt;
-    &lt;template repeat=&quot;{{ item in itemList }}&quot;&gt;
-      &lt;button aria-label=&quot;item-{{item.index}}&quot; 
-      tabIndex=&quot;{{item.index}}&quot; alt=&quot;{{item.index}}&quot; 
-      on-tap=&quot;{{gotoPage}}&quot;&gt;{{ labels? item.value : '&amp;#8226;'}} 
-      &lt;/button&gt;
-    &lt;/template&gt;
-  &lt;/div&gt;
-
-&lt;/polymer-ui-toolbar&gt;
+&lt;polymer-element name=&quot;polymer-ui-ratings&quot; 
+                 attributes=&quot;count value autofocus&quot;&gt;
+  &lt;template&gt;
+    &lt;span id=&quot;container&quot; tabindex=&quot;0&quot; 
+            on-keydown=&quot;{{keydownAction}}&quot; role=&quot;slider&quot;&gt;
+      &lt;template repeat=&quot;{{star in stars}}&quot;&gt;
+        &lt;span id=&quot;star&quot; index=&quot;{{star.index}}&quot; 
+          class=&quot;{{star.starClass}}&quot; on-tap=&quot;{{updateValue}}&quot;&gt;
+          &lt;/span&gt;
+      &lt;/template&gt;
+    &lt;/span&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+  .....
+  
 </pre>
 </article>
 
