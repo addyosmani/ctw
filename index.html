@@ -1347,8 +1347,8 @@ var MyElement = document.registerElement('my-element');
 
 
 
-
-<slide>
+<!-- ext -->
+<slide    data-body-class="core-fill" >
   
     <hgroup>
       <span>
@@ -1357,46 +1357,95 @@ var MyElement = document.registerElement('my-element');
         
         
       </span>
-      <h2>Custom Elements can respond to change</h2>
+      <h2></h2>
       <h3></h3>
     </hgroup>
-    <article>
- <div class="build">
+    <article class="flexbox vcenter"><h2 class="faded"><em>Extending</em> a Custom Element</h2></article>
+ 
+</slide>
 
-<p>
-Custom elements can respond to attribute changes
- <pre class="prettyprint" data-lang="JavaScript" data-run-demo="demos/components/x-pokemon/demo.html">
+
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+<pre class="nohighlight" style="margin-top: -50px; font-size: 1.2em;" data-run-demo="demos/components/megabutton/megabutton.html">
+// JS
+var MegaButton = document.registerElement('mega-button', {
+  prototype: Object.create(HTMLButtonElement.prototype)
+});
+
+// HTML
+&lt;button is="mega-button"&gt;
+</pre>
+
+</article>
+ 
+</slide>
+<!-- end ext -->
+
+<!--respond-->
+<slide    data-body-class="core-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded"><em>Callbacks</em> for Custom Elements</h2></article>
+ 
+</slide>
+
+
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+<pre class="nohighlight" style="margin-top: -50px; font-size: 1.2em;" data-run-demo="demos/components/x-pokemon/demo.html">
 document.registerElement('my-element', {
   prototype: Object.create(HTMLElement.prototype, {
+
+    // createdCallback, attachedCallback, detachedCallback
     attributeChangedCallback: {
       value: function(attr, oldVal, newVal) {
-        this.innerHTML = '&lt;h1&gt;ATTRIBUTE CHANGED!&lt;/h1&gt;';;
+        this.innerHTML = 'ATTRIBUTE CHANGED!';
       }
     }
+
   })
 });
 </pre>
-</p>
 
-<p>
-Other lifecycle events:
-<ul>
-<li>createdCallback</li>
-<li>attachedCallback</li>
-<li>detachedCallback</li>
-</ul>
-</p>
-
-
-
-
-</div></article>
+</article>
  
 </slide>
+<!-- end resp-->
 
-
-
-<slide>
+<!-- styling -->
+<slide    data-body-class="core-fill" >
   
     <hgroup>
       <span>
@@ -1405,39 +1454,104 @@ Other lifecycle events:
         
         
       </span>
-      <h2>Custom Elements can be extended</h2>
+      <h2></h2>
       <h3></h3>
     </hgroup>
-    <article>
- <div class="build">
+    <article class="flexbox vcenter"><h2 class="faded"><em>Styling</em> a Custom Element</h2></article>
+ 
+</slide>
 
-<p>
-Extending native custom elements
- <pre class="prettyprint" data-lang="JavaScript" data-run-demo="demos/components/megabutton/megabutton.html">
-var MegaButton = document.registerElement('mega-button', {
-  // inherit the prototype of HTMLButtonElement
-  prototype: Object.create(HTMLButtonElement.prototype)
-});
+
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+<pre class="nohighlight" style="margin-top: -50px; font-size: 1.2em;">
+&lt;style&gt;
+  x-foo {
+    display: block;
+  }
+  x-foo > [is="x-bar"] {
+    opacity: 0;
+  }
+&lt;/style&gt;
+
+&lt;x-foo&gt;
+    &lt;div is="x-bar"&gt;&lt;/div&gt;
+&lt;/x-foo&gt;
 </pre>
 
+</article>
+ 
+</slide>
 
-<p>Type extension custom element:
- <pre class="prettyprint" data-lang="HTML">
-&lt;button is=&quot;mega-button&quot;&gt;
 
-
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+<pre class="nohighlight" style="margin-top: -50px; font-size: 1.2em;">
+&lt;style&gt;
+  x-foo {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  x-foo:unresolved {
+    opacity: 0;
+  }
+&lt;/style&gt;
 </pre>
 
-</p>
-
-
-</div></article>
+</article>
  
 </slide>
 
 
 
+<slide  class="large"   >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter">
+<pre class="nohighlight" style="margin-top: -50px; font-size: 1.5em;" data-run-demo="demos/components/styling/index.html">
+shadow = this.createShadowRoot();
+shadow.innerHTML =
+  &quot;&lt;style&gt;span { color: green; }&lt;/style&gt;&quot; 
+  + &quot;&lt;span&gt;I'm green&lt;/span&gt;&quot;;
+</pre>
 
+</article>
+ 
+</slide>
+<!--end styling-->
+
+<!--
 <slide>
   
     <hgroup>
@@ -1483,9 +1597,9 @@ root.textContent = 'How you doing?';
 </div></article>
  
 </slide>
+-->
 
-
-
+<!--
 <slide>
   
     <hgroup>
@@ -1523,6 +1637,7 @@ x-foo /deep/ h1 {
 </div></article>
  
 </slide>
+-->
 <!-- end native elements part -->
 
 <slide    data-body-class="elements-fill" >
