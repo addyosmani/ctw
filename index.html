@@ -2563,7 +2563,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     &lt;h2&gt;I can say hello&lt;/h2&gt;
   &lt;/template&gt;
   &lt;script&gt;
-  Polymer('hello-element', {
+  Polymer({
     sayHello: function() { alert('Howdy folks!'); }
   });
   &lt;/script&gt;
@@ -2625,7 +2625,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     &lt;h2&gt;<b>{{owner}}</b> built me with Polymer&lt;/h2&gt;
   &lt;/template&gt;
   &lt;script&gt;
-  Polymer('owner-element', {
+  Polymer({
     <b>owner: 'Addy'</b>
   });
   &lt;/script&gt;
@@ -2685,7 +2685,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     &lt;h2&gt;<b>{{owner}}</b> built me with Polymer&lt;/h2&gt;
   &lt;/template&gt;
   &lt;script&gt;
-  Polymer('owner-element', {
+  Polymer({
     <b>owner: 'Addy'</b>
   });
   &lt;/script&gt;
@@ -2745,7 +2745,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     <b>&lt;span&gt;{{message}}&lt;/span&gt;</b>
   &lt;/template&gt;
   &lt;script&gt;
-  Polymer('click-element', {
+  Polymer({
     <b>message: 'Waiting to be clicked...'</b>
     <b>setMessage: function() { this.message = 'I was clicked!' }</b>
   });
@@ -2806,7 +2806,7 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     <b>&lt;input id="nameInput" type="text"&gt;</b>
   &lt;/template&gt;
   &lt;script&gt;
-  Polymer('focus-element', {
+  Polymer({
     <b>setFocus: function() { this.$.nameInput.focus(); }</b>
   });
   &lt;/script&gt;
