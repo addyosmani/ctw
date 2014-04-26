@@ -1,21 +1,7 @@
 
-/*
-@font-face {
-    font-family: 'imakiitalic';
-    src: url('../../fonts/imaki_italic-webfont.eot');
-    src: url('../../fonts/imaki_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/imaki_italic-webfont.woff') format('woff'),
-         url('../../fonts/imaki_italic-webfont.ttf') format('truetype'),
-         url('../../fonts/imaki_italic-webfont.svg#imakiitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-*/
-
 #title-slide {
     /*background-image: url(../../images/cover-slide.png);*/
-    background-image: url(../../images/unicorn.jpg);
+    background-image: url(../../images/comp2.jpg); /*comp2, unicorn*/
     background-size:cover;
     -webkit-transition: all 1000ms ease-in;
     -moz-transition: all 1000ms ease-in;
