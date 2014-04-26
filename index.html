@@ -63,16 +63,26 @@
   </article>
 </slide> -->
 
+
+<!---
  <slide id="first-slide" class="nobackground curtain"></slide>
+-->
  
+ <slide class="nobackground curtain fullviewport services-fill">
+   <article class="flexbox vcenter">
+    <img src="images/polymer/p-elements.svg" alt="">
+   </article>
+ </slide>
+
+
 <!--
 <slide id="title-slide" class="nobackdrop nobackground do-transition" style="background:#EEEEEE; background-image:url('images/poly.fw.png'); background-size:cover;">-->
 
-<slide id="title-slide" class=" segue nobackground curtain" >
+<slide id="title-slide" class=" segue nobackground curtain fullviewport" >
   <!-- <aside class="gdbar"><img src="images/logos/webcomponents.png"></aside> -->
   <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
   <article class="flexbox vcenter">
-    <hgroup style="display:none">
+    <hgroup style="display:none;">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
     </hgroup>
@@ -83,7 +93,7 @@
 </slide>
 
 
-<slide id="now" style="background:#e5e5e5">
+<slide id="now" class="curtain fullviewport" style="background:#e5e5e5;">
   
     <hgroup>
       <span>
@@ -92,8 +102,7 @@
         
         
       </span>
-      <h2>Schedule</h2>
-      <h3></h3>
+
     </hgroup>
     <article ><p class="avatar rounded"></p>
     <p><cards-element></cards-element></p>

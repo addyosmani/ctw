@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Componentize The Web!',
-    subtitle: "",
+    title: 'Componentize',
+    subtitle: "The Web!",
     eventInfo: {
       title: 'SmashingConf',
       date: 'Mar 18th, 2014'
