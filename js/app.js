@@ -278,7 +278,7 @@ function initDemos() {
       output.innerHTML = '';
 
       var ajax = document.createElement('polymer-ajax');
-      ajax.url = 'http://gdata.youtube.com/feeds/api/videos/';
+      ajax.url = 'demos/components/bower_components/polymer-ajax/results.json';
       ajax.params = {
         alt: 'json',
         q: 'chrome'

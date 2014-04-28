@@ -1,11 +1,11 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Componentize',
-    subtitle: "The Web!",
+    title: 'Web Components',
+    subtitle: "Can Do That?!",
     eventInfo: {
-      title: 'SmashingConf',
-      date: 'Mar 18th, 2014'
+      title: 'FITC Toronto',
+      date: 'April 28th, 2014'
     },
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: false, // Controlled in app.js 

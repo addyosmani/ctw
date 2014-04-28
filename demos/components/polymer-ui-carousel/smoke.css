@@ -10,6 +10,10 @@ polymer-ui-carousel {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+polymer-ui-carousel div {
+  font-size: 50px;
+}
+
 
 /* Disable focus */
 
