@@ -69,10 +69,11 @@ Ahoy yee view-sourcerors. This page be constantly evolving and due to many late 
 <!---
  <slide id="first-slide" class="nobackground curtain"></slide>
 -->
- 
- <slide class="nobackground curtain fullviewport services-fill">
+
+ <slide id="beta" class="nobackground curtain fullviewport services-fill">
    <article class="flexbox vcenter">
     <img src="images/polymer/p-logo.svg" alt="">
+    <p>Best viewed in Chrome Beta</p>
    </article>
  </slide>
 
@@ -90,6 +91,10 @@ Ahoy yee view-sourcerors. This page be constantly evolving and due to many late 
     </hgroup>
     <p data-config-presenter style="color:black; display:none"><!-- populated from slide_config.json --></p>
   </article>
+  <!--
+  Re-enable for actual presentation.
+  <audio src="media/thx.mp3" autoplay></audio>
+  -->
   <video data-src="videos/universe.webm" class="fullviewport" style="display:none;"></video>
   <audio data-src="audio/Stellardrone-Introspace.mp3" loop></audio>
 </slide>
@@ -1089,11 +1094,11 @@ var foo = mySelect.selectedIndex;
   <li><a href="demos/components/blink/blink.html">&lt;x-blink&gt;</a></li>
   <li><a href="yt-jukebox/demos/chart-js-polymer/index.html">&lt;x-chart&gt;</a></li>
   <li><a href="demos/components/x-gif/index.html#/iKXH4E2.gif">&lt;x-gif&gt;</a></li>
-  <li><a href="demos/components/x-miley/demo.html">&lt;x-miley&gt;</a>, <a href="demos/components/flappy-bieber/game.html">this</a></li>
+  <li><a href="demos/components/video-camera-element/index.html">&lt;video-camera&gt;</a></li>
+  <li><a href="demos/components/x-miley/demo.html">&lt;x-miley&gt;</a></li>
   <li><a href="demos/components/bower_components/polymer-ui-tabs/demo.html">&lt;my-tabs&gt;</a> (<a href="demos/components/tabbed-content/index.html">&lt;tabbed-content&gt;</a>,<a href="demos/components/polymer-ui-carousel/smoke.html">&lt;my-carousel&gt;</a>)</li>
   <li><a href="demos/components/yt-search/demo.html">&lt;yt-search&gt;</a></li>
-  <li><a href="media/google-signin.m4v" oldhref="demos/components/google-signin/components/google-signin/demo.html">&lt;google-signin&gt;</a> (<a href="media/polydrops.m4v" oldhref="demos/components/polydrops/index.html">&lt;poly-drops&gt;</a>)</li>
-  <li><a href="demos/components/video-camera-element/index.html">&lt;video-camera&gt;</a></li>
+  <li><a href="media/google-signin.html" oldhref="demos/components/google-signin/components/google-signin/demo.html">&lt;google-signin&gt;</a> (<a href="media/polydrops.html" oldhref="demos/components/polydrops/index.html">&lt;poly-drops&gt;</a>)</li>
   <li><a href="demos/components/x-slideshow/index.html">&lt;x-slideshow&gt;</a></li>
   <li><a href="demos/components/music-visualizer/index.html">&lt;music-visualizer&gt;</a></li>
   
@@ -2045,7 +2050,6 @@ x-foo /deep/ h1 {
 <p><code>&lt;polymer-ui-tabs&gt;</code> <a href="demos/components/bower_components/polymer-ui-tabs/demo.html">demo</a></p>
 <p><code>&lt;polymer-ui-toggle-button&gt;</code> <a href="demos/components/bower_components/polymer-ui-toggle-button/demo.html">demo</a></p>
 <p><code>&lt;polymer-ui-theme-aware&gt;</code></p>
-<p><a href="http://sg-sbx.herokuapp.com/index.html">Salesforce elements</a> (<a href="media/salesforce.m4v">video</a>)
 <p>...</p>
 <div class="build centered bold"><span><b class="green">Reusability</b>...the non-visual polymer-elements are used to implement these!</span></div></article>
  
@@ -2460,10 +2464,25 @@ pFile.addEventListener(<b>'polymer-result'</b>, function(e) {
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vcenter"><h2 class="faded">Polymer <a style="color:pink" href="designer/index.html">designer</a></h2></article>
+    <article class="flexbox vcenter"><h2 class="faded">Polymer <a style="color:pink" href="demos/components/designer/index.html">designer</a> (<a href="media/designer2.html">video</a>)</h2></article>
  
 </slide>
 
+<slide    data-body-class="core-fill" >
+  
+    <hgroup>
+      <span>
+        
+        
+        
+        
+      </span>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><h2 class="faded">Salesforce <a style="color:pink" href="http://sg-sbx.herokuapp.com/index.html">elements</a> (<a href="media/salesforce.html">video</a>)</h2></article>
+ 
+</slide>
 
 <slide id="creating-elements" class="nobackdrop nobackground segue core polymer-diagram"   >
   
@@ -3345,11 +3364,11 @@ var MyInput = document.registerElement('my-input', {prototype: proto});
     </hgroup>
     <article >
 <ul class="build">
-<li><a href="https://github.com/PolymerLabs/untitled-element">Boilerplate</a> - structure &amp; docs (<a href="media/untitled.m4v">video</a>)</li>
+<li><a href="https://github.com/PolymerLabs/untitled-element">Boilerplate</a> - structure &amp; docs (<a href="media/untitled.html">video</a>)</li>
 <li><a href="http://bower.io">Bower</a> - install & share Polymer elements</li>
 <li><a href="http://yeoman.io">Yeoman</a> - scaffold Polymer apps (<a href="yt-jukebox/handcoded/">example</a>)</li>
 <li><a href="https://github.com/Polymer/vulcanize">Vuncalize</a> - concatenate Web Components</li>
-<li><a href="http://customelements.io">CustomElements.io</a> - elements by the community (<a href="media/customelements.m4v">video</a>)</li>
+<li><a href="http://customelements.io">CustomElements.io</a> - elements by the community </li>
 </ul>
 
 
@@ -3433,14 +3452,13 @@ X-Tag can be used as normal in an import
  
 </slide>
 
-<slide     >
-  
+
+
+<slide  class="fullviewport" style="background:url('images/collaboration.jpg') no-repeat 50% 30%; background-size:cover; background-color:black">
+
     <hgroup>
       <span>
-        
-        
-        
-        
+
       </span>
       <h2></h2>
       <h3></h3>
@@ -3448,7 +3466,6 @@ X-Tag can be used as normal in an import
     <article ></article>
  
 </slide>
-
 
 
 <slide  class="highlight fullviewport" style="background:url('images/jake.gif') no-repeat 50% 30%; background-size:cover; background-color:black">
@@ -3501,7 +3518,8 @@ X-Tag can be used as normal in an import
   <aside class="gdbar right"><img src="images/logos/chrome_logo.png"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>&lt;thank-you&gt;</h2>
-    <div style="margin-bottom:5em;"><a href="http://addyosmani.github.io/ctw">addyosmani.github.io/ctw</a></div>
+    <!--
+    <div style="margin-bottom:5em;"><a href="http://addyosmani.github.io/ctw">addyosmani.github.io/ctw</a></div>-->
   </article>
   <p class="auto-fadein" data-config-contact></p>
 </slide>
@@ -3530,6 +3548,7 @@ X-Tag can be used as normal in an import
 <audio src="audio/Stellardrone-Introspace.mp3" loop></audio>
  -->
 
+<!--
 <script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22014378-1']);
@@ -3541,6 +3560,7 @@ X-Tag can be used as normal in an import
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+-->
 
 <!--[if IE]>
   <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
