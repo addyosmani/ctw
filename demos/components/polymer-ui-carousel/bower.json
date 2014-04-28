@@ -35,6 +35,11 @@
     "platform": "master",
     "polymer-flex-layout": "master",
     "core-component-page": "0.2.3",
-    "core-action-icons": "0.2.3"
+    "core-action-icons": "0.2.3",
+    "polymer-animation": "0.2.3",
+    "polymer-ui-base": "0.2.3",
+    "polymer-ui-pages": "0.2.3",
+    "polymer-selector": "0.2.3",
+    "polymer-selection": "0.2.3"
   }
 }
